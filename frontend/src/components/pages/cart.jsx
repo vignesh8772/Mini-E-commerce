@@ -42,7 +42,7 @@ export default function Cart({ nocart, setno }) {
   }
 
   function Order() {
-    fetch("http://localhost:8000/api/v1/order",{
+    fetch("https://mini-e-commerce-bgl8.onrender.com/api/v1/order",{
       method:"post",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(nocart)

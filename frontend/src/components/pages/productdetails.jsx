@@ -9,7 +9,7 @@ export default function productdetail({ nocart, setno }) {
   const [count, setcount] = useState(1);
   useEffect(() => {
     //fetch(process.env.REACT_APP_API_URL+'/product/'+id)
-    fetch("http://localhost:8000/api/v1/products/" + id)
+    fetch("https://mini-e-commerce-bgl8.onrender.com/api/v1/products/" + id)
       .then((res) => res.json())
       .then((data) => {
         // adjust this depending on API structure

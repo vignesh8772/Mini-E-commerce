@@ -7,7 +7,7 @@ export default function Home() {
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/v1/product?" + searchParams)
+    fetch("https://mini-e-commerce-bgl8.onrender.com/api/v1/product?" + searchParams)
       .then((res) => res.json()) // ✅ return JSON
       .then((data) => {
         setProducts(data.products); // ✅ adjust to your API response shape
